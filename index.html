@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Collection Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Section {
+            text-align: center;
+            padding: 50px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            text-align: left;
+            margin: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .Gift {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .lnk {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #contact {
+            text-align: center;
+            margin: 50px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            display: grid;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2f2c2c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styling modifications */
+        h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p,
+        span {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .product-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .product-description {
+            text-align: left;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Section" id="Section1">
+        <nav>
+            <div class="logo">The Shoe Collection</div>
+            <div class="menu">
+                <a href="#Section2">Products</a>
+                <a href="https://www.thecollective.in/m/gifts" target="_blank">Gifts</a>
+                <a href="#Section5">Contact</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <h2>The Shoe Collection</h2>
+            <p>Elevate your Style with our exclusive Shoe Collection</p>
+            <br />
+            <a href="https://www.thecollective.in/c/women-shoes" target="_blank"><button type="discover">Discover</button></a>
+
+        </section>
+    </div>
+
+    <!-- Product Section 1 -->
+    <div class="Section" id="Section2">
+        <div class="product-section">
+            <img src="a.jpg" alt="Product A" style="width: 300px;">
+            <div class="product-description">
+                <h2>Cool Snekers</h2>
+                <p>
+                    "Step into elegance with our Classic High Heels. Elevate your fashion
+                    with the timeless beauty and sophistication of these stunning shoes."
+                </p>
+                <p><span>$99.99</span></p>
+            </div>
+        </div>
+    </div>
+    <!---Product section 2-->
+    <div class="Section" id="Section2">
+        <div class="product-section">
+            <img src="b.jpg" alt="Product b" style="width: 300px;">
+            <div class="product-description">
+                <h2>Classic High Heels</h2>
+                <p>
+                    "Step into elegance with our Classic High Heels. Elevate your fashion
+                    with the timeless beauty and sophistication of these stunning shoes."
+                </p>
+                <p><span>$99.99</span></p>
+            </div>
+        </div>
+    </div>
+    <!--Product Section 3-->
+    <div class="Section" id="Section2">
+        <div class="product-section">
+            <img src="c.jpg" alt="Product c" style="width: 300px;">
+            <div class="product-description">
+                <h2>Classic High Heels</h2>
+                <p>
+                    "Step into elegance with our Classic High Heels. Elevate your fashion
+                    with the timeless beauty and sophistication of these stunning shoes."
+                </p>
+                <p><span>$99.99</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Add more Product Sections as needed -->
+
+    <div class="Section" id="Section5">
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+                <label for="phno">Phone No:</label>
+                <input type="tel" id="phno" name="phno" placeholder="Your Phone Number" required />
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="3" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>
